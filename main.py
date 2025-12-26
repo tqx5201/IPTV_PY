@@ -112,7 +112,7 @@ async def get_play_url(channel_id: str, video_id: str, request: Request):
         </body>
         </html>
         """
-        return HTMLResponse(content=player_html)
+        #return HTMLResponse(content=player_html)
 
     if not all([t, key]):
         raise HTTPException(status_code=400, detail="Missing query parameters")
