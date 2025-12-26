@@ -121,7 +121,7 @@ class G4TV(BaseChannel):
 
         for i in range(3):
             playlist += "#EXTINF:4,\n"
-            playlist += f"{os.getenv('PROXY_URL', '')}/data/litvpc-hichannel.cdn.hinet.net:443/live/pool/{video_id}/litv-pc/{video_id}-avc1_6000000={CHANNEL_MAPPING[video_id][0]}-mp4a_134000_zho={CHANNEL_MAPPING[video_id][1]}-begin={t}0000000-dur=40000000-seq={timestamp}.ts\n"
+            playlist += f"{os.getenv('PROXY_URL', '')}/data/ntd-tgc.cdn.hinet.net:443/live/pool/{video_id}/litv-pc/{video_id}-avc1_6000000={CHANNEL_MAPPING[video_id][0]}-mp4a_134000_zho={CHANNEL_MAPPING[video_id][1]}-begin={t}0000000-dur=40000000-seq={timestamp}.ts\n"
             timestamp += 1
             t += 4
 
